@@ -1,9 +1,9 @@
 on: [push, pull_request]
 
-name: cover
+name: reprex
 
 jobs:
-  cover:
+  reprex:
     runs-on: macOS-latest
     env:
       GITHUB_PAT: ${{ secrets.GITHUBPAT }}
