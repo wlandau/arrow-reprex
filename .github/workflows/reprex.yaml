@@ -15,8 +15,8 @@ jobs:
 
       - name: Install arrow
         run: install.packages("arrow")
-	shell: Rscript {0}
+        shell: Rscript {0}
 
       - name: Try arrow
         run: arrow::write_parquet(mtcars, tempfile())
-	shell: Rscript {0}
+        shell: Rscript {0}
